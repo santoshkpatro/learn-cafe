@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block style %}
-<link rel="stylesheet" href="{% static 'css/login.css' %}">
-{% endblock %}
 
 {% block content %}
-  <h1>Login</h1>
+  <h1>Register</h1>
   <form action="" method="post">
+    <div class="mb-2">
+      <label for="" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name">
+    </div>
     <div class="mb-2">
       <label for="" class="form-label">Email</label>
       <input type="text" class="form-control" name="email">
@@ -18,8 +17,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-{% endblock %}
-
-{% block script %}
-<script src="{% static 'js/login.js' %}"></script>
 {% endblock %}
